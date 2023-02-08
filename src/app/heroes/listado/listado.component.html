@@ -1,0 +1,12 @@
+<p>Listado de Heroes</p>
+
+<h3 *ngIf="heroeB">El heroe borrado es: {{heroeB}}</h3>
+
+<button (click)="borrarHeroe()">Borrar heroe</button>
+
+<ul>
+    <li *ngFor="let heroe of heroes">
+        {{heroe}}
+    </li>
+</ul>
+
